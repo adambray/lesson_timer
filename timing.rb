@@ -15,8 +15,10 @@ File.open(FILE_PATH, 'r') do |file|
 
     if match
       portion_minutes = match[2].to_i
+      portion_start = elapsed_time
       elapsed_time += (portion_minutes * 60)
-      updated_header = match[1] + match[2] + match[3] + " - #{elapsed_time.strftime "%H:%M"}" + match[4]
+      portion_end = elapsed_time
+      updated_header = match[1] + match[2] + match[3] + "; #{portion_start.strftime("%H:%M")}-#{portion_end.strftime("%H:%M")}" + match[4]
 
       new_file << updated_header
       summary << updated_header

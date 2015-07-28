@@ -49,14 +49,14 @@ placerat erat sed tempus aliquam. Integer et efficitur neque.
 The outputted files will look like:
 
 `lesson_plan_summary.md`:
-```
+```markdown
 ## Intro (5 minutes - 00:05)
 ## Difficult Material (70 minutes - 01:15)
 ## Closing (10 minutes - 01:25)
 ```
 
 `lesson_plan_timed.md`
-```
+```markdown
 # Sample Lesson
 
 ## Intro (5 minutes - 00:05)

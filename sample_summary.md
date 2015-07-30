@@ -1,3 +1,5 @@
-## Intro (5 minutes - 00:05)
-## Difficult Material (70 minutes - 01:15)
-## Closing (10 minutes - 01:25)
+## Intro (5 minutes; 00:00-00:05)
+## Difficult Material (85 min; 00:05-01:30)
+## Lunch (60; 01:30-02:30)
+## More Difficult Material (30 min; 02:30-03:00)
+## Closing (10 minutes; 03:00-03:10)

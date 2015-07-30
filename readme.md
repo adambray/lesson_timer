@@ -10,6 +10,8 @@ each section. It then creates two new files:
 
 ```bash
 $ ruby timing.rb sample.md
+# or add your start time
+$ ruby timing.rb sample.md 9:00
 ```
 
 ### Input
@@ -18,6 +20,14 @@ This script expects your lesson plan to include headers formatted like so:
 ```markdown
 ## Intro (10 minutes)
 ```
+
+The parsing is quite forgiving.  You really just need a number to follow the open paren.
+```markdown
+## Intro (10 min)
+## Intro (10 m)
+## Intro (10)
+```
+
 
 The headers can be any level header.
 
@@ -75,4 +85,17 @@ lobortis eu, suscipit sed justo.
 
 Donec dolor justo, facilisis sit amet mattis a, fringilla quis velit. Nullam
 placerat erat sed tempus aliquam. Integer et efficitur neque.
+```
+
+If you pass a start time, the output will look like this:
+
+```
+$ ruby timing.rb sample.md 10:00
+```
+
+`sample_summary.md:`
+```markdown
+## Intro (5 minutes - 10:05)
+## Difficult Material (70 minutes - 11:15)
+## Closing (10 minutes - 11:25)
 ```
